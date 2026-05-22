@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario MTECH
-        
-    </title>
+    <title>formulario Mcperformance</title>
 </head>
 <body>
     <header>
-        <h1>Formulário de Desempenho MTECH</h1>
+        <h1>Formulário de Desempenho Mcperformance</h1>
     </header>
     <section >
         <form action ="" method = "get"><!-- method get pega os dados e envia na URL. o methodo post envia os dados como um reader em requisição ao backend -->   
-            <fieldset>
+            <!--<fieldset>
                 <legend>Dados Pessoais</legend>
                 <label for = "name">Nome:</label>
                 <input id="name" type = "text" name = "userName" placeholder="Nome" required>
@@ -94,7 +92,7 @@
                     <option value="tocantins">Tocantins</option>
                 </select>
                 <br><label for="city">Cidade :</label>
-                <input id="city" type = "text" name = "userCity" placeholder = "Digite sua cidade">
+                <input id="city" type = "text" name = "userCity" placeholder = "Digite sua cidade" required>
             </fieldset>
             <fieldset>
             
@@ -152,7 +150,31 @@
                 <br>
                 <label for="healthDetails">Se sim, por favor especifique:</label>
                 <input id="healthDetails" type="text" name="healthConditionDetails" placeholder="Especifique sua condição">
-
+            </fieldset>-->
+            <fieldset>
+                <legend>Objetivos e Autoavaliação</legend>
+                <label for="fitnessgoal">Qual o seu principal objetivo com relação à prática de exercícios físicos?</label>
+                <select id="fitnessgoal" name="goal" required>
+                    <option value="perda-peso">Perda de peso</option>
+                    <option value="ganho-muscular">Ganho muscular</option>
+                    <option value="melhora-saude">Melhora da saúde geral</option>
+                    <option value="aumento-resistencia">Aumento da resistência física</option>
+                    <option value="manutencao">Manter meu peso atual</option>
+                </select>
+                <br>
+                
+                <label for="nivel">Como você avaliaria seu nível atual de condicionamento físico atual?</label>
+                <select id="nivel" name="condition" required>
+                    <option value="excelente">Excelente</option>
+                    <option value="bom">Bom</option>
+                    <option value="regular">Regular</option>
+                    <option value="melhorar">Da para melhorar</option>
+                    <option value="ruim">Ruim</option>
+                    <option value="pessimo">Péssimo</option>
+                </select>
+                <br>
+                <label for="challenges">Quais são os principais desafios que você enfrenta para alcançar seus objetivos de fitness?</label>
+                <textarea id="challenges" name="fitnessChallenges" rows="4" cols="50" placeholder="Descreva seus desafios aqui..."></textarea>
             </fieldset>
             <button type="submit">Enviar</button>            
         </form>
