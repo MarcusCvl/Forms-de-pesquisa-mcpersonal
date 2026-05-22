@@ -142,7 +142,17 @@
                     <option value="esporte-alternativo">
                     <option value="artes-marciais">
                 </datalist>
- 
+                <br>
+                <label for="healthCondition">Você tem alguma condição de saúde que possa afetar sua prática de exercícios físicos?</label>
+                <select id="healthCondition" name="Condition" required>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                
+                <br>
+                <label for="healthDetails">Se sim, por favor especifique:</label>
+                <input id="healthDetails" type="text" name="healthConditionDetails" placeholder="Especifique sua condição">
+
             </fieldset>
             <button type="submit">Enviar</button>            
         </form>
