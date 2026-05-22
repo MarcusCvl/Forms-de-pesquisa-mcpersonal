@@ -51,8 +51,8 @@
                 <label for = "notInformed">Prefiro não informar</label>
                 <br>
                 
-                <label for="maritalStatus">Estado Civil :</label>
-                <select name="maritalStatus">
+                <label for="status">Estado Civil :</label>
+                <select id="status" name="maritalStatus">
                     <option value="notInformed">Selecione</option>
                     <option value="Casado">Casado</option>
                     <option value="Solteiro">Solteiro</option>
@@ -61,9 +61,9 @@
                 </select>
 
                 <br>
-                <label for="userState">Estado :</label>
+                <label for="state">Estado :</label>
                 
-                <select name="userState" required>
+                <select id="state" name="userState" required>
 
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
@@ -93,10 +93,11 @@
                     <option value="sergipe">Sergipe</option>
                     <option value="tocantins">Tocantins</option>
                 </select>
-                <br><label for="userCity">Cidade :</label>
-                <input type = "text" name = "userCity" placeholder = "Digite sua cidade">
+                <br><label for="city">Cidade :</label>
+                <input id="city" type = "text" name = "userCity" placeholder = "Digite sua cidade">
             </fieldset>
             <fieldset>
+            
                 <legend>Hábitos</legend>
                 <p>Você pratica exercícios físicos regularmente?</p>
                 <input id="exerciseYes" type = "radio" name = "exerciseHabits" value = "sim">
@@ -132,6 +133,7 @@
                 <br>
                 <input id = "outros" type="checkbox" name="exerciseType" value="outros">
                 <label for = "outros">Outros</label><br>
+ 
             </fieldset>
             <button type="submit">Enviar</button>            
         </form>
