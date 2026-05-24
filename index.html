@@ -163,17 +163,20 @@
                 </select>
                 <br>
                 
-                <label for="nivel">Como você avaliaria seu nível atual de condicionamento físico atual?</label>
-                <select id="nivel" name="condition" required>
-                    <option value="excelente">Excelente</option>
-                    <option value="bom">Bom</option>
-                    <option value="regular">Regular</option>
-                    <option value="melhorar">Da para melhorar</option>
-                    <option value="ruim">Ruim</option>
-                    <option value="pessimo">Péssimo</option>
-                </select>
+                <p>Como você avaliaria seu nível atual de condicionamento físico atual?</p>
+                <input id="condition" type="radio" name="fitnessLevel" value="nao-pratico">
+                <label for="condition">Não costumo me exercitar</label>
                 <br>
-                <label for="challenges">Quais são os principais desafios que você enfrenta para alcançar seus objetivos de fitness?</label>
+                <input id="condition2" type="radio" name="fitnessLevel" value="intermediario">
+                <label for="condition2">Me exercito de vez em quando</label>
+                <br>
+                <input id="condition3" type="radio" name="fitnessLevel" value="avancado">
+                <label for="condition3">Me exercito com bastante frequencia</label>
+                <br>
+                <input id="condition4" type="radio" name="fitnessLevel" value="experiente">
+                <label for="condition4">Experiente</label>
+                <br>
+                <label for="challenges">Quais são os principais desafios que você enfrenta para alcançar seus objetivos de fitness?</label><br>
                 <textarea id="challenges" name="fitnessChallenges" rows="4" cols="50" placeholder="Descreva seus desafios aqui..."></textarea>
             </fieldset>
             <button type="submit">Enviar</button>            
