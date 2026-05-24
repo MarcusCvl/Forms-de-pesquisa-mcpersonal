@@ -13,12 +13,12 @@
         <form action ="" method = "get"><!-- method get pega os dados e envia na URL. o methodo post envia os dados como um reader em requisição ao backend -->   
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <label for = "name">Nome:</label>
-                <input id="name" type = "text" name = "userName" placeholder="Nome" required>
+                <label for = "name">Nome Completo:</label>
+                <input id="name" type = "text" name = "userName" placeholder="Nome Completo" required>
             
                  <br>
                 <label for = "age">Idade:</label>
-                <input id="age" type = "number" name = "userAge" placeholder="Idade" min = "12" max = "100" required>
+                <input id="age" type = "number" name = "userAge" placeholder="Idade" min = "15" max = "100" required>
 
                 <br>
                 <label for = "birth">Data de Nascimento:</label>
@@ -96,8 +96,38 @@
             </fieldset>
 
             <fieldset>
+                <legend>Objetivos e Autoavaliação</legend>
+                <label for="fitnessgoal">Qual o seu principal objetivo com relação à prática de exercícios físicos?</label>
+                <select id="fitnessgoal" name="goal" required>
+                    <option value="null">--Selecione--</option>
+                    <option value="perda-peso">Perda de peso</option>
+                    <option value="ganho-muscular">Ganho muscular</option>
+                    <option value="melhora-saude">Melhora da saúde geral</option>
+                    <option value="aumento-resistencia">Aumento da resistência física</option>
+                    <option value="manutencao">Manter meu peso atual</option>
+                </select>
+                <br>
+                
+                <p>Como você avaliaria seu nível atual de condicionamento físico atual?</p>
+                <input id="condition" type="radio" name="fitnessLevel" value="nao-pratico">
+                <label for="condition">Não costumo me exercitar</label>
+                <br>
+                <input id="condition2" type="radio" name="fitnessLevel" value="iniciante">
+                <label for="condition2">Sou iniciante na musculação</label>
+                <br>
+                <input id="condition3" type="radio" name="fitnessLevel" value="intermediario">
+                <label for="condition3">Me exercito regularmente</label>
+                <br>
+                <input id="condition4" type="radio" name="fitnessLevel" value="experiente">
+                <label for="condition4">Experiente</label>
+                <br> 
+                <label for="challenges">Quais são os principais desafios que você enfrenta para alcançar seus objetivos de fitness?</label><br>
+                <textarea id="challenges" name="fitnessChallenges" rows="4" cols="50" placeholder="Descreva seus desafios aqui..."></textarea>
+            </fieldset>
+            <fieldset>
             
                 <legend>Hábitos</legend>
+                
                 <p>Você pratica exercícios físicos regularmente?</p>
                 <input id="exerciseYes" type = "radio" name = "exerciseHabits" value = "sim">
                 <label for = "exerciseYes">Sim</label>
@@ -132,8 +162,11 @@
                 <br>
                 <input id = "outros" type="checkbox" name="exerciseType" value="outros">
                 <label for = "outros">Outros</label><br>
+                <input id="none" type="checkbox" name="exerciseType" value="none">
+                <label for="none">Não pratico atividade física</label><br>
 
                 <label for="otherexercise">Caso outros, por favor especifique:</label>
+
                 <input list="exerciseOptions" id="otherexercise" name="userotherexercise" type="text">
                 <datalist id="exerciseOptions">
                     <option value="exercicio-funcional">
@@ -142,12 +175,11 @@
                     <option value="artes-marciais">
                 </datalist>
                 <br>
-                <label for="healthCondition">Você tem alguma condição de saúde que possa afetar sua prática de exercícios físicos?</label>
-                <select id="healthCondition" name="Condition" required>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                </select>
-                
+                <label for="healthCondition">Você tem alguma condição de saúde que possa afetar sua prática de exercícios físicos?</label><br>
+                <input id="healthCondition" type="radio" name="Condition" value="sim" required>
+                <label for="healthCondition">Sim</label>
+                <input id="healthConditionNo" type="radio" name="Condition" value="nao">
+                <label for="healthConditionNo">Não</label>
                 <br>
                 <label for="healthDetails">Se sim, por favor especifique:</label>
                 <input id="healthDetails" type="text" name="healthConditionDetails" placeholder="Especifique sua condição">
@@ -200,36 +232,20 @@
 
             </fieldset>
             <fieldset>
-                <legend>Objetivos e Autoavaliação</legend>
-                <label for="fitnessgoal">Qual o seu principal objetivo com relação à prática de exercícios físicos?</label>
-                <select id="fitnessgoal" name="goal" required>
-                    <option value="perda-peso">Perda de peso</option>
-                    <option value="ganho-muscular">Ganho muscular</option>
-                    <option value="melhora-saude">Melhora da saúde geral</option>
-                    <option value="aumento-resistencia">Aumento da resistência física</option>
-                    <option value="manutencao">Manter meu peso atual</option>
-                </select>
-                <br>
-                
-                <p>Como você avaliaria seu nível atual de condicionamento físico atual?</p>
-                <input id="condition" type="radio" name="fitnessLevel" value="nao-pratico">
-                <label for="condition">Não costumo me exercitar</label>
-                <br>
-                <input id="condition2" type="radio" name="fitnessLevel" value="iniciante">
-                <label for="condition2">Me exercito de vez em quando</label>
-                <br>
-                <input id="condition3" type="radio" name="fitnessLevel" value="intermediario">
-                <label for="condition3">Me exercito com bastante frequencia</label>
-                <br>
-                <input id="condition4" type="radio" name="fitnessLevel" value="experiente">
-                <label for="condition4">Experiente</label>
-                <br> 
-                <label for="challenges">Quais são os principais desafios que você enfrenta para alcançar seus objetivos de fitness?</label><br>
-                <textarea id="challenges" name="fitnessChallenges" rows="4" cols="50" placeholder="Descreva seus desafios aqui..."></textarea>
+                <legend>Termo de Responsabilidade para Prática de Atividade Física</legend>
+                <input id="userLgpdTerm" type="checkbox" name="userLgpd" value="Accepted" required>
+                <label for="userLgpdTerm">Estou ciente de que é recomendável conversar com um médico antes de aumentar meu nível atual de atividade física, por ter respondido “SIM” a uma ou mais perguntas do “Questionário de Prontidão para Atividade Física” (PAR-Q). Assumo plena responsabilidade por qualquer atividade física praticada sem o atendimento a essa recomendação</label><br>
+
+                <input id="userTerms" type="checkbox" name="userTerms" value="Accepted" required>
+                <label for="userTerms">Declaro que as informações fornecidas neste formulário são verdadeiras e completas. Estou ciente de que a Mcperformance pode usar essas informações para personalizar minha experiência e fornecer recomendações de exercícios adequadas ao meu perfil alem de contatar pelos meios de comunicação fornecidos.</label>
             </fieldset>
-            <button type="submit">Enviar</button>            
+            
+            <button type="submit">Enviar</button> 
+            <button type="reset">Limpar</button>            
         </form>
     </section>
-    
+    <footer>
+        <p class="devby">© 2026 MTECH from <a class = "linkdevby" href="https://www.instagram.com/marcuscRvl/" target="_blank">Marcus Carvalho</a></p>
+    </footer>
 </body>
 </html>
