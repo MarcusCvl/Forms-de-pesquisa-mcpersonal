@@ -11,7 +11,7 @@
     </header>
     <section >
         <form action ="" method = "get"><!-- method get pega os dados e envia na URL. o methodo post envia os dados como um reader em requisição ao backend -->   
-            <!--<fieldset>
+            <fieldset>
                 <legend>Dados Pessoais</legend>
                 <label for = "name">Nome:</label>
                 <input id="name" type = "text" name = "userName" placeholder="Nome" required>
@@ -51,7 +51,7 @@
                 
                 <label for="status">Estado Civil :</label>
                 <select id="status" name="maritalStatus">
-                    <option value="notInformed">Selecione</option>
+                    <option value="null">--Selecione--</option>
                     <option value="Casado">Casado</option>
                     <option value="Solteiro">Solteiro</option>
                     <option value="Divorciado">Divorciado</option>
@@ -62,7 +62,7 @@
                 <label for="state">Estado :</label>
                 
                 <select id="state" name="userState" required>
-
+                    <option value="null">--Selecione--</option>
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
                     <option value="amapa">Amapá</option>
@@ -94,6 +94,7 @@
                 <br><label for="city">Cidade :</label>
                 <input id="city" type = "text" name = "userCity" placeholder = "Digite sua cidade" required>
             </fieldset>
+
             <fieldset>
             
                 <legend>Hábitos</legend>
@@ -150,7 +151,54 @@
                 <br>
                 <label for="healthDetails">Se sim, por favor especifique:</label>
                 <input id="healthDetails" type="text" name="healthConditionDetails" placeholder="Especifique sua condição">
-            </fieldset>-->
+            </fieldset>
+            <fieldset>
+                <legend>QUESTIONÁRIO DE PRONTIDÃO PARA ATIVIDADE FÍSICA (PAR-Q)</legend>
+                <p>Este questionário tem o objetivo de identificar a necessidade de avaliação por um médico antes do início da atividade física. Caso você responda “SIM” a uma ou mais perguntas, converse com seu médico ANTES de aumentar seu nível atual de atividade física. Mencione este questionário e as perguntas às quais você respondeu “SIM”</p>
+                <p>Assinale “SIM” ou “NÃO” às seguintes perguntas:</p>
+                <label for="q1">1. Algum médico já disse que você possui algum problema de coração e que só deveria realizar atividade física supervisionado por profissionais de saúde?</label><br>
+                <input id="q1" type="radio" name="parq1" value="sim" required>
+                <label for="q1">Sim</label>
+                <input id="q1no" type="radio" name="parq1" value="nao">
+                <label for="q1no">Não</label><br>
+
+                <label for="q2">2. Você sente dor no peito ao realizar atividade física?</label><br>
+                <input id="q2" type="radio" name="parq2" value="sim" required>
+                <label for="q2">Sim</label>
+                <input id="q2no" type="radio" name="parq2" value="nao">
+                <label for="q2no">Não</label><br>
+
+                <label for="q3">3. No último mês, você sentiu dores no peito quando praticou atividade física?</label><br>
+                <input id="q3" type="radio" name="parq3" value="sim" required>
+                <label for="q3">Sim</label>
+                <input id="q3no" type="radio" name="parq3" value="nao">
+                <label for="q3no">Não</label><br>
+
+                <label for="q4">4. Você tem perda de equilíbrio devido a tontura ou já perdeu a consciência?</label><br>
+                <input id="q4" type="radio" name="parq4" value="sim" required>
+                <label for="q4">Sim</label>
+                <input id="q4no" type="radio" name="parq4" value="nao">
+                <label for="q4no">Não</label><br>
+
+                <label for="q5">5. Você tem alguma problema ósseo ou articular que possa piorar com a atividade física?</label><br>
+                <input id="q5" type="radio" name="parq5" value ="sim" required>
+                <label for="q5">Sim</label>
+                <input id="q5no" type="radio" name="parq5" value="nao">
+                <label for="q5no">Não</label><br>
+
+                <label for="q6">6. Você toma atualmente algum medicamento para pressão arterial e/ou problema de coração?</label><br>
+                <input id="q6" type="radio" name="parq6" value="sim" required>
+                <label for="q6">Sim</label>
+                <input id="q6no" type="radio" name="parq6" value="nao">
+                <label for="q6no">Não</label><br>
+
+                <label for="q7">7. Sabe de alguma outra razão pela qual você não deve praticar atividade física?</label><br>
+                <input id="q7" type="radio" name="parq7" value="sim" required>
+                <label for="q7">Sim</label>
+                <input id="q7no" type="radio" name="parq7" value="nao">
+                <label for="q7no">Não</label><br>
+
+            </fieldset>
             <fieldset>
                 <legend>Objetivos e Autoavaliação</legend>
                 <label for="fitnessgoal">Qual o seu principal objetivo com relação à prática de exercícios físicos?</label>
@@ -167,15 +215,15 @@
                 <input id="condition" type="radio" name="fitnessLevel" value="nao-pratico">
                 <label for="condition">Não costumo me exercitar</label>
                 <br>
-                <input id="condition2" type="radio" name="fitnessLevel" value="intermediario">
+                <input id="condition2" type="radio" name="fitnessLevel" value="iniciante">
                 <label for="condition2">Me exercito de vez em quando</label>
                 <br>
-                <input id="condition3" type="radio" name="fitnessLevel" value="avancado">
+                <input id="condition3" type="radio" name="fitnessLevel" value="intermediario">
                 <label for="condition3">Me exercito com bastante frequencia</label>
                 <br>
                 <input id="condition4" type="radio" name="fitnessLevel" value="experiente">
                 <label for="condition4">Experiente</label>
-                <br>
+                <br> 
                 <label for="challenges">Quais são os principais desafios que você enfrenta para alcançar seus objetivos de fitness?</label><br>
                 <textarea id="challenges" name="fitnessChallenges" rows="4" cols="50" placeholder="Descreva seus desafios aqui..."></textarea>
             </fieldset>
