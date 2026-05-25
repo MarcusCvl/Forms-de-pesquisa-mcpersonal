@@ -135,3 +135,18 @@ button[type="reset"]:hover {
     transition: color 1.3s ease;
     
 }
+footer {
+    margin-top: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+}
+.links-sucess{
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-right: 10px;
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
