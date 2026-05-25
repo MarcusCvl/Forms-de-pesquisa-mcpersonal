@@ -12,29 +12,91 @@
     --title-font: 'Fjalla One', sans-serif;
     --secondary-font: 'Work Sans', sans-serif; 
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
 
 body {
     font-family: var(--secondary-font);
     background-color: var(--primary-color);
     color: var(--light-color);
     margin: 0;
-    padding: 0;
+    padding: 20px;
     align-items: center;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
-legend {
-    font-family: var(--title-font);
-    color: var(--secondary-color);
-    margin-bottom: 10px;
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
-img.logo {
+
+.logo {
     width: 300px;
     height: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 h1 {
     font-family: var(--title-font);
     color: var(--light-color);
     margin-bottom: 20px;
+}
+form {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 12px;
+    
+}
+fieldset{
+    padding: 15px;
+    border: 1px solid var(--light-color);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: var(--title-font);
+    color: var(--light-color);
+    padding: 0 5px;   
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+input, select, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--light-color);
+    border-radius: 3px;
+}
+textarea{
+    min-height: 100px;
+}
+input[type="checkbox"],
+input[type="radio"]{
+    width: auto;
+}
+.devby{
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    margin-top: 20px;
+    font-size: 14px;
+}
+.linkdevby{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.linkdevby:hover{
+    color: var(--accent-color);
+    transition: color 1.3s ease;
+    
 }
