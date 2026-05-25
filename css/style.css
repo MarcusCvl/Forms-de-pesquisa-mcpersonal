@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Cores */
+    --primary-color: #050c1a;
+    --secondary-color: #D79B2B;
+    --tertiary-color: #5c3f09;
+    --accent-color: #123e9c;
+    --light-color: #F8FAFC;
+
+    /* Tipografia */
+    --title-font: 'Fjalla One', sans-serif;
+    --secondary-font: 'Work Sans', sans-serif; 
+}
+
+body {
+    font-family: var(--secondary-font);
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+legend {
+    font-family: var(--title-font);
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+img.logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+h1 {
+    font-family: var(--title-font);
+    color: var(--light-color);
+    margin-bottom: 20px;
+}
