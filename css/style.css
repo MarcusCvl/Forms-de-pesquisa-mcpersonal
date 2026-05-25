@@ -5,8 +5,9 @@
     --primary-color: #050c1a;
     --secondary-color: #D79B2B;
     --tertiary-color: #f7dfb4;
-    --accent-color: #123e9c;
+    --accent-color: #553802;
     --light-color: #F8FAFC;
+    --alternate-color: #462e03;
 
     /* Tipografia */
     --title-font: 'Fjalla One', sans-serif;
@@ -71,6 +72,13 @@ label {
     display: inline-block;
     margin-bottom: 5px;
 }
+.checkbox-label{
+    display:flex;
+    align-items:flex-start;
+    gap: 5px;
+    line-height: 1.5;
+}
+
 input, select, textarea{
     width: 100%;
     padding: 8px;
@@ -85,21 +93,32 @@ textarea{
 }
 input[type="checkbox"],
 input[type="radio"]{
-    width: auto;
-   
+    width: auto;  
 }
+input:invalid,select:invalid, textarea:invalid{
+    border-color: red;
+}
+
 strong{
     font-size: px;
 }
 button {
-    background-color: var(--primary-color);
+    width: 100px;
+    background-color: var(--accent-color);
     color: var(--light-color);
-    border: none;
-    padding: 10px 20px;
+    border: 1px solid var(--alternate-color);
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    margin: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+button[type="submit"]:hover {
+    background-color:green;
+    transition: background-color 0.3s ease;
+}
+button[type="reset"]:hover {
+    background-color: red;
+    transition: background-color 0.3s ease;
 }
 .devby{
     font-family: var(--secondary-font);

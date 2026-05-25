@@ -138,7 +138,7 @@
                 <label for = "exerciseNo">Não</label><br>
                 <p>Quantos dias por semana você pratica exercícios físicos?</p>
                 
-                <input id="frequencia"type = "number" name = "exerciseFrequency" min = "0" max = "7" placeholder="0 a 7 dias">
+                <input id="frequencia"type = "number" name = "exerciseFrequency" min = "0" max = "7" placeholder="0 a 7 dias" required>
                 <label for = "frequencia">Dias por semana:</label>
 
                 <p>Marque quais atividades físicas você pratica:</p>
@@ -237,11 +237,15 @@
             </fieldset>
             <fieldset>
                 <legend><strong>Termo de Responsabilidade para Prática de Atividade Física</strong></legend>
-                <input id="userLgpdTerm" type="checkbox" name="userLgpd" value="Accepted" required>
-                <label for="userLgpdTerm"><strong>Estou ciente de que é recomendável conversar com um médico antes de aumentar meu nível atual de atividade física, por ter respondido “SIM” a uma ou mais perguntas do “Questionário de Prontidão para Atividade Física” (PAR-Q). Assumo plena responsabilidade por qualquer atividade física praticada sem o atendimento a essa recomendação</strong></label><br>
+                
+                <label class="checkbox-label" for="userLgpdTerm">
+                    <input id="userLgpdTerm" type="checkbox" name="userLgpd" value="Accepted" required> <strong>Estou ciente de que é recomendável conversar com um médico antes de aumentar meu nível atual de atividade física, por ter respondido “SIM” a uma ou mais perguntas do “Questionário de Prontidão para Atividade Física” (PAR-Q). Assumo plena responsabilidade por qualquer atividade física praticada sem o atendimento a essa recomendação</strong></label><br>
 
-                <input id="userTerms" type="checkbox" name="userTerms" value="Accepted" required>
-                <label for="userTerms"><strong>Declaro que as informações fornecidas neste formulário são verdadeiras e completas. Estou ciente de que a MC PERSONAL CONSULTORIA pode usar essas informações para personalizar minha experiência e fornecer recomendações de exercícios adequadas ao meu perfil alem de contatar pelos meios de comunicação fornecidos.</strong></label>
+                
+                <label class="checkbox-label" for="userTerms">
+                    <input id="userTerms" type="checkbox" name="userTerms" value="Accepted" required>
+                    <strong>Declaro que as informações fornecidas neste formulário são verdadeiras e completas. Estou ciente de que a MC PERSONAL CONSULTORIA pode usar essas informações para personalizar minha experiência e fornecer recomendações de exercícios adequadas ao meu perfil alem de contatar pelos meios de comunicação fornecidos.</strong>
+                </label>
             </fieldset>
             
             <button type="submit">Enviar</button> 
