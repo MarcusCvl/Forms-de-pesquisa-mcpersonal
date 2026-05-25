@@ -4,7 +4,7 @@
     /* Cores */
     --primary-color: #050c1a;
     --secondary-color: #D79B2B;
-    --tertiary-color: #5c3f09;
+    --tertiary-color: #f7dfb4;
     --accent-color: #123e9c;
     --light-color: #F8FAFC;
 
@@ -75,8 +75,10 @@ input, select, textarea{
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid var(--light-color);
+    border: 1px solid var(--tertiary-color);
     border-radius: 3px;
+    background-color: var(--tertiary-color);
+    cursor: pointer;
 }
 textarea{
     min-height: 100px;
@@ -84,6 +86,20 @@ textarea{
 input[type="checkbox"],
 input[type="radio"]{
     width: auto;
+   
+}
+strong{
+    font-size: px;
+}
+button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
 }
 .devby{
     font-family: var(--secondary-font);
