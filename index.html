@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
     <title>formulario MCPC</title>
 </head>
 <body>
     <header>
+        <img src="assets/logo.png" alt="Logo da MC Personal Consultoria" class="logo">
         <h1>Formulário de Desempenho</h1>
     </header>
     <section >
@@ -135,7 +138,7 @@
                 <label for = "exerciseNo">Não</label><br>
                 <p>Quantos dias por semana você pratica exercícios físicos?</p>
                 
-                <input id="frequencia"type = "number" name = "exerciseFrequency" min = "0" max = "7">
+                <input id="frequencia"type = "number" name = "exerciseFrequency" min = "0" max = "7" placeholder="0 a 7 dias">
                 <label for = "frequencia">Dias por semana:</label>
 
                 <p>Marque quais atividades físicas você pratica:</p>
@@ -167,12 +170,13 @@
 
                 <label for="otherexercise">Caso outros, por favor especifique:</label>
 
-                <input list="exerciseOptions" id="otherexercise" name="userotherexercise" type="text">
+                <input list="exerciseOptions" id="otherexercise" name="userotherexercise" type="text" placeholder="Digite ou selecione sua atividade">
                 <datalist id="exerciseOptions">
-                    <option value="exercicio-funcional">
-                    <option value="cardio">
-                    <option value="esporte-alternativo">
-                    <option value="artes-marciais">
+                    <option value="exercicio-funcional">Exercício Funcional</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="pilates">Pilates</option>
+                    <option value="esporte-alternativo">Esporte Alternativo</option>
+                    <option value="artes-marciais">Artes Marciais</option>
                 </datalist>
                 <br>
                 <label for="healthCondition">Você tem alguma condição de saúde que possa afetar sua prática de exercícios físicos?</label><br>
@@ -232,12 +236,12 @@
 
             </fieldset>
             <fieldset>
-                <legend>Termo de Responsabilidade para Prática de Atividade Física</legend>
+                <legend><strong>Termo de Responsabilidade para Prática de Atividade Física</strong></legend>
                 <input id="userLgpdTerm" type="checkbox" name="userLgpd" value="Accepted" required>
-                <label for="userLgpdTerm">Estou ciente de que é recomendável conversar com um médico antes de aumentar meu nível atual de atividade física, por ter respondido “SIM” a uma ou mais perguntas do “Questionário de Prontidão para Atividade Física” (PAR-Q). Assumo plena responsabilidade por qualquer atividade física praticada sem o atendimento a essa recomendação</label><br>
+                <label for="userLgpdTerm"><strong>Estou ciente de que é recomendável conversar com um médico antes de aumentar meu nível atual de atividade física, por ter respondido “SIM” a uma ou mais perguntas do “Questionário de Prontidão para Atividade Física” (PAR-Q). Assumo plena responsabilidade por qualquer atividade física praticada sem o atendimento a essa recomendação</strong></label><br>
 
                 <input id="userTerms" type="checkbox" name="userTerms" value="Accepted" required>
-                <label for="userTerms">Declaro que as informações fornecidas neste formulário são verdadeiras e completas. Estou ciente de que a MC PERSONAL CONSULTORIA pode usar essas informações para personalizar minha experiência e fornecer recomendações de exercícios adequadas ao meu perfil alem de contatar pelos meios de comunicação fornecidos.</label>
+                <label for="userTerms"><strong>Declaro que as informações fornecidas neste formulário são verdadeiras e completas. Estou ciente de que a MC PERSONAL CONSULTORIA pode usar essas informações para personalizar minha experiência e fornecer recomendações de exercícios adequadas ao meu perfil alem de contatar pelos meios de comunicação fornecidos.</strong></label>
             </fieldset>
             
             <button type="submit">Enviar</button> 
@@ -245,7 +249,7 @@
         </form>
     </section>
     <footer>
-        <p class="devby">© 2026 MTECH from <a class = "linkdevby" href="https://www.instagram.com/marcuscRvl/" target="_blank">Marcus Carvalho</a></p>
+        <p class="devby">© 2026 MC PERSONAL CONSULTORIA from <a class = "linkdevby" href="https://www.instagram.com/marcuscRvl/" target="_blank">Marcus Carvalho</a></p>
     </footer>
 </body>
 </html>
