@@ -7,7 +7,7 @@
     --tertiary-color: #f7dfb4;
     --accent-color: #553802;
     --light-color: #F8FAFC;
-    --alternate-color: #462e03;
+    --alternate-color: #2b1b00;
 
     /* Tipografia */
     --title-font: 'Fjalla One', sans-serif;
@@ -23,7 +23,7 @@
 body {
     font-family: var(--secondary-font);
     background-color: var(--primary-color);
-    color: var(--light-color);
+    color:var(--alternate-color);
     margin: 0;
     padding: 20px;
     align-items: center;
@@ -49,6 +49,9 @@ h1 {
     color: var(--light-color);
     margin-bottom: 20px;
 }
+p{
+    font-weight: bold;
+}
 form {
     background-color: var(--secondary-color);
     padding: 15px;
@@ -63,15 +66,15 @@ fieldset{
     margin-bottom: 20px;
 }
 legend {
-   
+    font-weight: bold;
     font-size: 18px;
     font-family: var(--title-font);
-    color: var(--light-color);
     padding: 0 5px;   
 }
-label {
+label{
     display: inline-block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 .checkbox-label{
     display:flex;
@@ -98,10 +101,6 @@ input[type="radio"]{
 }
 input:invalid,select:invalid, textarea:invalid{
     border-color: red;
-}
-
-strong{
-    font-size: px;
 }
 button {
     width: 100px;
@@ -149,10 +148,10 @@ footer {
 }
 .sucess-title{
     font-family: var(--title-font);
-    color: var(--light-color);
     text-align: center;
     margin-top: 20px;
 }
+
 
 .links-section{
     display: flex;
@@ -163,15 +162,22 @@ footer {
     align-items: center;
 }
 .links-sucess{
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--alternate-color);
     text-decoration: none;
     margin-right: 10px;
     font-size: 24px;
     display: flex;
     align-items: center;
     gap: 10px;
+    border: 1px solid var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 16px;
+    width: 240px;
+    justify-content: center;
 }
 .links-sucess:hover{
     color: var(--accent-color);
     transition: color 0.3s ease;
+    transform: scale(1.1);
 }
