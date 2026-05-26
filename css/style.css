@@ -152,6 +152,7 @@ footer {
     margin-top: 20px;
 }
 
+
 .links-section{
     display: flex;
     flex-direction: column;
@@ -161,15 +162,22 @@ footer {
     align-items: center;
 }
 .links-sucess{
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--alternate-color);
     text-decoration: none;
     margin-right: 10px;
     font-size: 24px;
     display: flex;
     align-items: center;
     gap: 10px;
+    border: 1px solid var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 16px;
+    width: 240px;
+    justify-content: center;
 }
 .links-sucess:hover{
     color: var(--accent-color);
     transition: color 0.3s ease;
+    transform: scale(1.1);
 }
