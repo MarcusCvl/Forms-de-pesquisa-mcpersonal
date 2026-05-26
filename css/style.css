@@ -76,6 +76,15 @@ label{
     margin-bottom: 5px;
     font-weight: bold;
 }
+input[type="tel"]{
+    margin-bottom: 0px;
+}
+small{
+    display: inline-block;
+    margin-bottom: 10px;
+    
+}
+
 .checkbox-label{
     display:flex;
     align-items:flex-start;
