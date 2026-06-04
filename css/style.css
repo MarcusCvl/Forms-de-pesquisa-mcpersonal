@@ -52,6 +52,7 @@ h1 {
 p{
     font-weight: bold;
 }
+
 form {
     background-color: var(--secondary-color);
     padding: 15px;
