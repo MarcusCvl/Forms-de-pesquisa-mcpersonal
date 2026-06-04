@@ -151,7 +151,7 @@ a{
     color: var(--light-color);
     transform: translateY(-3px);
 }
-h1 {
+h1, h2{
     font-family: var(--title-font);
     color: var(--light-color);
     margin-bottom: 20px;
@@ -168,6 +168,17 @@ p{
     background:var(--secondary-color);
 
     margin-bottom:30px;
+}
+.about{
+    text-align: center;
+    padding: 80px 60px;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+
+    max-width:1400px;
+    margin:0 auto;
+    padding:80px 60px;
 }
 .devby{
     font-family: var(--secondary-font);
