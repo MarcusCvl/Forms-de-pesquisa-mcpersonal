@@ -18,48 +18,50 @@
         <h1>Perfil de Performance</h1>
     </header>
     <main>
-        <form action ="sucess.html" method = "get"><!-- method get pega os dados e envia na URL. o methodo post envia os dados como um reader em requisição ao backend -->   
+        <form action ="https://formsubmit.co/marcuscarvalho307@gmail.com" method = "post"><!-- method get pega os dados e envia na URL. o methodo post envia os dados como um reader em requisição ao backend -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://google.com">   
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <label for = "name">Nome Completo:</label>
-                <input id="name" type = "text" name = "userName" placeholder="Nome Completo" required>
+                <input id="name" type = "text" name = "Nome" placeholder="Nome Completo" required>
             
                  <br>
                 <label for = "age">Idade:</label>
-                <input id="age" type = "number" name = "userAge" placeholder="Idade" min = "15" max = "100" required>
+                <input id="age" type = "number" name = "Idade" placeholder="Idade" min = "15" max = "100" required>
 
                 <br>
                 <label for = "birth">Data de Nascimento:</label>
-                <input id="birth" type = "date" name = "birthDate">
+                <input id="birth" type = "date" name = "Data-de-Nascimento">
 
                 <br>
                 <label for = "email">Email:</label>
-                <input id="email" type = "email" name = "userEmail" placeholder="Email" required>
+                <input id="email" type = "email" name = "Email-usuario" placeholder="Email" required>
 
                 <br>
                 <label for="phoneNumber">Telefone:</label>
-                <input id="phoneNumber" type="tel" name="userPhoneNumber" placeholder = "DDD+Numero sem simbolos" pattern = [0-9]{11} required aria-describedby="phonehelp">
+                <input id="phoneNumber" type="tel" name="Telefone" placeholder = "DDD+Numero sem simbolos" pattern = [0-9]{11} required aria-describedby="phonehelp">
                 <small id="phonehelp">Formato: DDD+Número (apenas números, sem espaços ou símbolos)</small>
                 <br>
                 <label for="image"> Upload de foto</label>
-                <input id="image" type = "file" name = "userImage" accept="image/*">
+                <input id="image" type = "file" name = "Foto-usuario" accept="image/*">
                 <small>Envie uma foto no formato png ou jpeg</small>
             </fieldset>
             <fieldset>
                 <legend>Perfil</legend>
                 <p>Gênero :</p>
-                <input id="masc"type = "radio" name = "userGender" value = "masculino" required>
+                <input id="masc"type = "radio" name = "genero" value = "masculino" required>
                 <label for = "masc">Masculino</label>
 
-                <input id="fem"type = "radio" name = "userGender" value = "feminino">
+                <input id="fem"type = "radio" name = "genero" value = "feminino">
                 <label for = "fem">Feminino</label>
 
-                <input id="notInformed"type = "radio" name = "userGender" value = "notInformed">
+                <input id="notInformed"type = "radio" name = "genero" value = "notInformed">
                 <label for = "notInformed">Prefiro não informar</label>
                 <br>
                 
                 <label for="status">Estado Civil :</label>
-                <select id="status" name="maritalStatus">
+                <select id="status" name="estado-civil">
                     <option value="null">--Selecione--</option>
                     <option value="Casado">Casado</option>
                     <option value="Solteiro">Solteiro</option>
@@ -70,7 +72,7 @@
                 <br>
                 <label for="state">Estado :</label>
                 
-                <select id="state" name="userState" required>
+                <select id="state" name="estado-residencia" required>
                     <option value="null">--Selecione--</option>
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
@@ -101,13 +103,13 @@
                     <option value="tocantins">Tocantins</option>
                 </select>
                 <br><label for="city">Cidade :</label>
-                <input id="city" type = "text" name = "userCity" placeholder = "Digite sua cidade" >
+                <input id="city" type = "text" name = "cidade" placeholder = "Digite sua cidade" >
             </fieldset>
 
             <fieldset>
                 <legend>Objetivos e Autoavaliação</legend>
                 <label for="fitnessgoal">Qual o seu principal objetivo com relação à prática de exercícios físicos?</label>
-                <select id="fitnessgoal" name="goal" >
+                <select id="fitnessgoal" name="objetivo" >
                     <option value="null">--Selecione--</option>
                     <option value="perda-peso">Perda de peso</option>
                     <option value="ganho-muscular">Ganho muscular</option>
@@ -118,65 +120,65 @@
                 <br>
                 
                 <p>Como você avaliaria seu nível atual de condicionamento físico atual?</p>
-                <input id="condition" type="radio" name="fitnessLevel" value="nao-pratico" required>
+                <input id="condition" type="radio" name="Nivel-de-treinamento" value="nao-pratico" required>
                 <label for="condition">Não costumo me exercitar</label>
                 <br>
-                <input id="condition2" type="radio" name="fitnessLevel" value="iniciante">
+                <input id="condition2" type="radio" name="Nivel-de-treinamento" value="iniciante">
                 <label for="condition2">Sou iniciante na musculação</label>
                 <br>
-                <input id="condition3" type="radio" name="fitnessLevel" value="intermediario">
+                <input id="condition3" type="radio" name="Nivel-de-treinamento" value="intermediario">
                 <label for="condition3">Me exercito regularmente</label>
                 <br>
-                <input id="condition4" type="radio" name="fitnessLevel" value="experiente">
+                <input id="condition4" type="radio" name="Nivel-de-treinamento" value="experiente">
                 <label for="condition4">Experiente</label>
                 <br> 
                 <label for="challenges">Quais são os principais desafios que você enfrenta para alcançar seus objetivos de fitness?</label><br>
-                <textarea id="challenges" name="fitnessChallenges" rows="4" cols="50" placeholder="Descreva seus desafios aqui..."></textarea>
+                <textarea id="challenges" name="Dificuldades" rows="4" cols="50" placeholder="Descreva seus desafios aqui..."></textarea>
             </fieldset>
             <fieldset>
             
                 <legend>Hábitos</legend>
                 
                 <p>Você pratica exercícios físicos regularmente?</p>
-                <input id="exerciseYes" type = "radio" name = "exerciseHabits" value = "sim">
+                <input id="exerciseYes" type = "radio" name = "habito-de-exercicio" value = "sim">
                 <label for = "exerciseYes">Sim</label>
-                <input id="exerciseNo" type = "radio" name = "exerciseHabits" value = "nao">
+                <input id="exerciseNo" type = "radio" name = "habito-de-exercicio" value = "nao">
                 <label for = "exerciseNo">Não</label><br>
                 <p>Quantos dias por semana você pratica exercícios físicos?</p>
                 
-                <input id="frequencia"type = "number" name = "exerciseFrequency" min = "0" max = "7" placeholder="0 a 7 dias" required>
+                <input id="frequencia"type = "number" name = "frequencia" min = "0" max = "7" placeholder="0 a 7 dias" required>
                 <label for = "frequencia">Dias por semana:</label>
 
                 <p>Marque quais atividades físicas você pratica:</p>
-                <input id = "corrida" type="checkbox" name="exerciseType" value="corrida">
+                <input id = "corrida" type="checkbox" name="atividades" value="corrida">
                 <label for = "corrida">Corrida</label>
                 <br>
-                <input id = "natacao" type="checkbox" name="exerciseType" value="natacao">
+                <input id = "natacao" type="checkbox" name="atividades" value="natacao">
                 <label for = "natacao">Natação</label>
                 <br>
-                <input id = "ciclismo" type="checkbox" name="exerciseType" value="ciclismo">
+                <input id = "ciclismo" type="checkbox" name="atividades" value="ciclismo">
                 <label for = "ciclismo">Ciclismo</label>
                 <br>
-                <input id = "musculacao" type="checkbox" name="exerciseType" value="musculacao">
+                <input id = "musculacao" type="checkbox" name="atividades" value="musculacao">
                 <label for = "musculacao">Musculação</label>
                 <br>
-                <input id = "ginastica" type="checkbox" name="exerciseType" value="ginastica">
+                <input id = "ginastica" type="checkbox" name="atividades" value="ginastica">
                 <label for = "ginastica">Ginástica</label>
                 <br>
-                <input id = "yoga" type="checkbox" name="exerciseType" value="yoga">
+                <input id = "yoga" type="checkbox" name="atividades" value="yoga">
                 <label for = "yoga">Yoga</label>
                 <br>
-                <input id = "futebol" type="checkbox" name="exerciseType" value="futebol">  
+                <input id = "futebol" type="checkbox" name="atividades" value="futebol">
                 <label for = "futebol">Futebol</label>
                 <br>
-                <input id = "outros" type="checkbox" name="exerciseType" value="outros">
+                <input id = "outros" type="checkbox" name="atividades" value="outros">
                 <label for = "outros">Outros</label><br>
-                <input id="none" type="checkbox" name="exerciseType" value="none">
+                <input id="none" type="checkbox" name="atividades" value="none">
                 <label for="none">Não pratico atividade física</label><br>
 
                 <label for="otherexercise">Caso outros, por favor especifique:</label>
 
-                <input list="exerciseOptions" id="otherexercise" name="userotherexercise" type="text" placeholder="Digite ou selecione sua atividade">
+                <input list="exerciseOptions" id="otherexercise" name="Outras-atividades" type="text" placeholder="Digite ou selecione sua atividade">
                 <datalist id="exerciseOptions">
                     <option value="exercicio-funcional">Exercício Funcional</option>
                     <option value="cardio">Cardio</option>
@@ -186,13 +188,13 @@
                 </datalist>
                 <br>
                 <label for="healthCondition">Você tem alguma condição de saúde que possa afetar sua prática de exercícios físicos?</label><br>
-                <input id="healthCondition" type="radio" name="Condition" value="sim" required>
+                <input id="healthCondition" type="radio" name="Condicao-Saude" value="sim" required>
                 <label for="healthCondition">Sim</label>
-                <input id="healthConditionNo" type="radio" name="Condition" value="nao">
+                <input id="healthConditionNo" type="radio" name="Condicao-Saude" value="nao">
                 <label for="healthConditionNo">Não</label>
                 <br>
                 <label for="healthDetails">Se sim, por favor especifique:</label>
-                <input id="healthDetails" type="text" name="healthConditionDetails" placeholder="Especifique sua condição">
+                <input id="healthDetails" type="text" name="detalhes-condicao-saude" placeholder="Especifique sua condição">
             </fieldset>
             <fieldset>
                 <legend>QUESTIONÁRIO DE PRONTIDÃO PARA ATIVIDADE FÍSICA (PAR-Q)</legend>
