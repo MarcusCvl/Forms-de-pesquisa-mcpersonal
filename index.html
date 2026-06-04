@@ -1,267 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulário de perfil de performance para personalização de treinos e acompanhamento de clientes da MC Personal Consultoria.">
-    <meta property="og:title" content="Formulário de Perfil de Performance - MC Personal Consultoria">
-    <meta property="og:description" content="Preencha o formulário para receber recomendações de exercícios personalizadas e acompanhamento especializado.">
-    <meta property="og:image" content="assets/logo.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Seu acompanhamento fitness personalizado. Venha conhecer nossos serviços e alcance seus objetivos com a MC Personal Consultoria.">
+        <meta property="og:title" content="Site oficial - MC Personal Consultoria">
+        <meta property="og:description" content="Seu acompanhamento fitness personalizado. Venha conhecer nossos serviços e alcance seus objetivos com a MC Personal Consultoria.">
+        <meta property="og:image" content="assets/logo.png">
+
+        <link rel="icon" href="assets/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/index.css">
+        <title>MC Personal Consultoria</title>
+    </head>
     
-    <link rel="icon" href="assets/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Formulário MCPC</title>
-</head>
-<body>
-    <header>
-        <img src="assets/logo.png" alt="Logo da MC Personal Consultoria" class="logo">
-        <h1>Perfil de Performance</h1>
-    </header>
-    <main>
-        <form action ="https://formsubmit.co/marcuscarvalho307@gmail.com" method = "post"><!-- method get pega os dados e envia na URL. o methodo post envia os dados como um reader em requisição ao backend -->
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://google.com">   
-            <fieldset>
-                <legend>Dados Pessoais</legend>
-                <label for = "name">Nome Completo:</label>
-                <input id="name" type = "text" name = "Nome" placeholder="Nome Completo" required>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo da MC Personal Consultoria" class="logo">
+                </a>
+                <div class="nav-links">
+                    <a href="#sobre">SOBRE</a>
+                    <a href="#servicos">SERVIÇOS</a>
+                    <a href="#contato">CONTATO</a>
+                </div>
+                <a class="cta-header" href="form.html">AVALIAÇÃO</a>
+            </nav>
+        </header>
+        <hr>
+        <main>
             
-                 <br>
-                <label for = "age">Idade:</label>
-                <input id="age" type = "number" name = "Idade" placeholder="Idade" min = "15" max = "100" required>
-
-                <br>
-                <label for = "birth">Data de Nascimento:</label>
-                <input id="birth" type = "date" name = "Data-de-Nascimento">
-
-                <br>
-                <label for = "email">Email:</label>
-                <input id="email" type = "email" name = "Email-usuario" placeholder="Email" required>
-
-                <br>
-                <label for="phoneNumber">Telefone:</label>
-                <input id="phoneNumber" type="tel" name="Telefone" placeholder = "DDD+Numero sem simbolos" pattern = [0-9]{11} required aria-describedby="phonehelp">
-                <small id="phonehelp">Formato: DDD+Número (apenas números, sem espaços ou símbolos)</small>
-                <br>
-                <label for="image"> Upload de foto</label>
-                <input id="image" type = "file" name = "Foto-usuario" accept="image/*">
-                <small>Envie uma foto no formato png ou jpeg</small>
-            </fieldset>
-            <fieldset>
-                <legend>Perfil</legend>
-                <p>Gênero :</p>
-                <input id="masc"type = "radio" name = "genero" value = "masculino" required>
-                <label for = "masc">Masculino</label>
-
-                <input id="fem"type = "radio" name = "genero" value = "feminino">
-                <label for = "fem">Feminino</label>
-
-                <input id="notInformed"type = "radio" name = "genero" value = "notInformed">
-                <label for = "notInformed">Prefiro não informar</label>
-                <br>
-                
-                <label for="status">Estado Civil :</label>
-                <select id="status" name="estado-civil">
-                    <option value="null">--Selecione--</option>
-                    <option value="Casado">Casado</option>
-                    <option value="Solteiro">Solteiro</option>
-                    <option value="Divorciado">Divorciado</option>
-                    <option value="casado">União estavel</option>
-                </select>
-
-                <br>
-                <label for="state">Estado :</label>
-                
-                <select id="state" name="estado-residencia" required>
-                    <option value="null">--Selecione--</option>
-                    <option value="acre">Acre</option>
-                    <option value="alagoas">Alagoas</option>
-                    <option value="amapa">Amapá</option>
-                    <option value="amazonas">Amazonas</option>
-                    <option value="bahia">Bahia</option>
-                    <option value="ceara">Ceará</option>
-                    <option value="distrito-federal">Distrito Federal</option>
-                    <option value="espirito-santo">Espírito Santo</option>
-                    <option value="goias">Goiás</option>
-                    <option value="maranha">Maranhão</option>
-                    <option value="mato-grosso">Mato Grosso</option>
-                    <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
-                    <option value="minas-gerais">Minas Gerais</option>
-                    <option value="para">Pará</option>
-                    <option value="paraiba">Paraíba</option>
-                    <option value="parana">Paraná</option>
-                    <option value="pernambuco">Pernambuco</option>
-                    <option value="piaui">Piauí</option>
-                    <option value="rio-de-janeiro">Rio de Janeiro</option>
-                    <option value="rio-grande-do-norte">Rio Grande do Norte</option>
-                    <option value="rio-grande-do-sul">Rio Grande do Sul</option>
-                    <option value="rondonia">Rondônia</option>
-                    <option value="roraima">Roraima</option>
-                    <option value="santa-catarina">Santa Catarina</option>
-                    <option value="sao-paulo">São Paulo</option>
-                    <option value="sergipe">Sergipe</option>
-                    <option value="tocantins">Tocantins</option>
-                </select>
-                <br><label for="city">Cidade :</label>
-                <input id="city" type = "text" name = "cidade" placeholder = "Digite sua cidade" >
-            </fieldset>
-
-            <fieldset>
-                <legend>Objetivos e Autoavaliação</legend>
-                <label for="fitnessgoal">Qual o seu principal objetivo com relação à prática de exercícios físicos?</label>
-                <select id="fitnessgoal" name="objetivo" >
-                    <option value="null">--Selecione--</option>
-                    <option value="perda-peso">Perda de peso</option>
-                    <option value="ganho-muscular">Ganho muscular</option>
-                    <option value="melhora-saude">Melhora da saúde geral</option>
-                    <option value="aumento-resistencia">Aumento da resistência física</option>
-                    <option value="manutencao">Manter meu peso atual</option>
-                </select>
-                <br>
-                
-                <p>Como você avaliaria seu nível atual de condicionamento físico atual?</p>
-                <input id="condition" type="radio" name="Nivel-de-treinamento" value="nao-pratico" required>
-                <label for="condition">Não costumo me exercitar</label>
-                <br>
-                <input id="condition2" type="radio" name="Nivel-de-treinamento" value="iniciante">
-                <label for="condition2">Sou iniciante na musculação</label>
-                <br>
-                <input id="condition3" type="radio" name="Nivel-de-treinamento" value="intermediario">
-                <label for="condition3">Me exercito regularmente</label>
-                <br>
-                <input id="condition4" type="radio" name="Nivel-de-treinamento" value="experiente">
-                <label for="condition4">Experiente</label>
-                <br> 
-                <label for="challenges">Quais são os principais desafios que você enfrenta para alcançar seus objetivos de fitness?</label><br>
-                <textarea id="challenges" name="Dificuldades" rows="4" cols="50" placeholder="Descreva seus desafios aqui..."></textarea>
-            </fieldset>
-            <fieldset>
-            
-                <legend>Hábitos</legend>
-                
-                <p>Você pratica exercícios físicos regularmente?</p>
-                <input id="exerciseYes" type = "radio" name = "habito-de-exercicio" value = "sim">
-                <label for = "exerciseYes">Sim</label>
-                <input id="exerciseNo" type = "radio" name = "habito-de-exercicio" value = "nao">
-                <label for = "exerciseNo">Não</label><br>
-                <p>Quantos dias por semana você pratica exercícios físicos?</p>
-                
-                <input id="frequencia"type = "number" name = "frequencia" min = "0" max = "7" placeholder="0 a 7 dias" required>
-                <label for = "frequencia">Dias por semana:</label>
-
-                <p>Marque quais atividades físicas você pratica:</p>
-                <input id = "corrida" type="checkbox" name="atividades" value="corrida">
-                <label for = "corrida">Corrida</label>
-                <br>
-                <input id = "natacao" type="checkbox" name="atividades" value="natacao">
-                <label for = "natacao">Natação</label>
-                <br>
-                <input id = "ciclismo" type="checkbox" name="atividades" value="ciclismo">
-                <label for = "ciclismo">Ciclismo</label>
-                <br>
-                <input id = "musculacao" type="checkbox" name="atividades" value="musculacao">
-                <label for = "musculacao">Musculação</label>
-                <br>
-                <input id = "ginastica" type="checkbox" name="atividades" value="ginastica">
-                <label for = "ginastica">Ginástica</label>
-                <br>
-                <input id = "yoga" type="checkbox" name="atividades" value="yoga">
-                <label for = "yoga">Yoga</label>
-                <br>
-                <input id = "futebol" type="checkbox" name="atividades" value="futebol">
-                <label for = "futebol">Futebol</label>
-                <br>
-                <input id = "outros" type="checkbox" name="atividades" value="outros">
-                <label for = "outros">Outros</label><br>
-                <input id="none" type="checkbox" name="atividades" value="none">
-                <label for="none">Não pratico atividade física</label><br>
-
-                <label for="otherexercise">Caso outros, por favor especifique:</label>
-
-                <input list="exerciseOptions" id="otherexercise" name="Outras-atividades" type="text" placeholder="Digite ou selecione sua atividade">
-                <datalist id="exerciseOptions">
-                    <option value="exercicio-funcional">Exercício Funcional</option>
-                    <option value="cardio">Cardio</option>
-                    <option value="pilates">Pilates</option>
-                    <option value="esporte-alternativo">Esporte Alternativo</option>
-                    <option value="artes-marciais">Artes Marciais</option>
-                </datalist>
-                <br>
-                <label for="healthCondition">Você tem alguma condição de saúde que possa afetar sua prática de exercícios físicos?</label><br>
-                <input id="healthCondition" type="radio" name="Condicao-Saude" value="sim" required>
-                <label for="healthCondition">Sim</label>
-                <input id="healthConditionNo" type="radio" name="Condicao-Saude" value="nao">
-                <label for="healthConditionNo">Não</label>
-                <br>
-                <label for="healthDetails">Se sim, por favor especifique:</label>
-                <input id="healthDetails" type="text" name="detalhes-condicao-saude" placeholder="Especifique sua condição">
-            </fieldset>
-            <fieldset>
-                <legend>QUESTIONÁRIO DE PRONTIDÃO PARA ATIVIDADE FÍSICA (PAR-Q)</legend>
-                <p>Este questionário tem o objetivo de identificar a necessidade de avaliação por um médico antes do início da atividade física. Caso você responda “SIM” a uma ou mais perguntas, converse com seu médico ANTES de aumentar seu nível atual de atividade física. Mencione este questionário e as perguntas às quais você respondeu “SIM”</p>
-                <p>Assinale “SIM” ou “NÃO” às seguintes perguntas:</p>
-                <label for="q1">1. Algum médico já disse que você possui algum problema de coração e que só deveria realizar atividade física supervisionado por profissionais de saúde?</label><br>
-                <input id="q1" type="radio" name="parq1" value="sim" required>
-                <label for="q1">Sim</label>
-                <input id="q1no" type="radio" name="parq1" value="nao">
-                <label for="q1no">Não</label><br>
-
-                <label for="q2">2. Você sente dor no peito ao realizar atividade física?</label><br>
-                <input id="q2" type="radio" name="parq2" value="sim" required>
-                <label for="q2">Sim</label>
-                <input id="q2no" type="radio" name="parq2" value="nao">
-                <label for="q2no">Não</label><br>
-
-                <label for="q3">3. No último mês, você sentiu dores no peito quando praticou atividade física?</label><br>
-                <input id="q3" type="radio" name="parq3" value="sim" required>
-                <label for="q3">Sim</label>
-                <input id="q3no" type="radio" name="parq3" value="nao">
-                <label for="q3no">Não</label><br>
-
-                <label for="q4">4. Você tem perda de equilíbrio devido a tontura ou já perdeu a consciência?</label><br>
-                <input id="q4" type="radio" name="parq4" value="sim" required>
-                <label for="q4">Sim</label>
-                <input id="q4no" type="radio" name="parq4" value="nao">
-                <label for="q4no">Não</label><br>
-
-                <label for="q5">5. Você tem alguma problema ósseo ou articular que possa piorar com a atividade física?</label><br>
-                <input id="q5" type="radio" name="parq5" value ="sim" required>
-                <label for="q5">Sim</label>
-                <input id="q5no" type="radio" name="parq5" value="nao">
-                <label for="q5no">Não</label><br>
-
-                <label for="q6">6. Você toma atualmente algum medicamento para pressão arterial e/ou problema de coração?</label><br>
-                <input id="q6" type="radio" name="parq6" value="sim" required>
-                <label for="q6">Sim</label>
-                <input id="q6no" type="radio" name="parq6" value="nao">
-                <label for="q6no">Não</label><br>
-
-                <label for="q7">7. Sabe de alguma outra razão pela qual você não deve praticar atividade física?</label><br>
-                <input id="q7" type="radio" name="parq7" value="sim" required>
-                <label for="q7">Sim</label>
-                <input id="q7no" type="radio" name="parq7" value="nao">
-                <label for="q7no">Não</label><br>
-
-            </fieldset>
-            <fieldset>
-                <legend>Termo de Responsabilidade para Prática de Atividade Física</legend>
-                
-                <label class="checkbox-label" for="userLgpdTerm">
-                    <input id="userLgpdTerm" type="checkbox" name="userLgpd" value="Accepted" required> <strong>Estou ciente de que é recomendável conversar com um médico antes de aumentar meu nível atual de atividade física, por ter respondido “SIM” a uma ou mais perguntas do “Questionário de Prontidão para Atividade Física” (PAR-Q). Assumo plena responsabilidade por qualquer atividade física praticada sem o atendimento a essa recomendação</strong>
-                </label><br>
-                
-                <label class="checkbox-label" for="userTerms">
-                    <input id="userTerms" type="checkbox" name="userTerms" value="Accepted" required>
-                    <strong>Declaro que as informações fornecidas neste formulário são verdadeiras e completas. Estou ciente de que a MC PERSONAL CONSULTORIA pode usar essas informações para personalizar minha experiência e fornecer recomendações de exercícios adequadas ao meu perfil alem de contatar pelos meios de comunicação fornecidos.</strong>
-                </label>
-            </fieldset>
-            
-            <button type="submit" aria-label="Enviar formulário">Enviar</button> 
-            <button type="reset" aria-label="Limpar formulário">Limpar</button>            
-        </form>
-    </main>
-    <footer>
+            <section class="hero">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1>Seu progresso começa com o <span class="destaque">Primeiro passo.</span></h1>
+                        <span class="line"></span>
+                        <p class="index-text">
+                            Olá, eu sou <span class="destaque">Márcio Carvalho</span>, Bacharel em Educação Física, Pós-Graduado em Medicina do Esporte e especialista em Treinamento Funcional. <span class="destaque">Método, ciência e propósito</span> para transformar seu corpo e sua vida.
+                        </p>
+                        <a class="cta" href="form.html">QUERO MINHA AVALIAÇÃO</a> 
+                    </div>
+                    <div class="hero-image">
+                        <img src="../assets/personal.png" alt="Imagem de destaque do site">
+                    </div>
+                </div>    
+            </section>
+            <hr>
+            <section id="sobre" class="about">
+                <h2>Sobre Nós</h2>
+                <p class="index-text">
+                    Olá, é um prazer ter você aqui.Se você chegou até aqui, provavelmente existe algo dentro de você dizendo que é hora de mudar. Melhorar sua saúde. Recuperar sua energia. Evoluir seu condicionamento. Ou simplesmente voltar a se sentir bem no próprio corpo. A verdade é que o primeiro passo não começa no treino. Começa na decisão.Eu acredito que o treino não é apenas movimento — é estratégia. Não se trata de repetir exercícios, mas de aplicar método e direcionamento correto para que cada esforço gere resultado real.Sou Bacharel em Educação Física, Pós-Graduado em Medicina do Esporte e especialista em Treinamento Funcional e Condicionamento Físico. Minha missão é unir ciência, experiência prática e acompanhamento individualizado para entregar resultados seguros e sustentáveis.Aqui você não encontra treinos aleatórios. Cada planejamento é estruturado com base em evidência científica e adaptado à sua realidade.Cada pessoa carrega uma história. Cada corpo responde de maneira única. E é por isso que seu treino precisa ser pensado para você.Seja para emagrecimento, ganho de performance, fortalecimento ou qualidade de vida, o foco é sempre o mesmo: evolução com propósito.Se você está pronto para treinar com método e conquistar resultados consistentes, eu estou pronto para caminhar ao seu lado.Vamos começar?
+                </p>
+            </section>
+        </main>
+        <footer>
         <p class="devby">© 2026 MC PERSONAL CONSULTORIA from <a class = "linkdevby" href="https://www.instagram.com/marcuscrvl/" target="_blank">Marcus Carvalho</a></p>
     </footer>
-</body>
+    </body>
 </html>
