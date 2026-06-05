@@ -62,7 +62,8 @@ a{
     width:100%;
     position:relative;
     overflow:hidden;
-
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -162,24 +163,82 @@ p{
 .line{
     display:block;
 
-    width:70px;
+    width:100px;
     height:4px;
 
     background:var(--secondary-color);
 
     margin-bottom:30px;
 }
-.about{
-    text-align: center;
-    padding: 80px 60px;
-    justify-content:space-between;
+.benefits{
+    display:flex;
+    gap:30px;
+    margin-top:40px;
+}
+.benefit{
+    display:flex;
     align-items:center;
-    gap:40px;
-    ;
+    gap:10px;
 
+    max-width:250px;
+}
+.benefit:not(:last-child){
+    border-right:1px solid var(--secondary-color);
+    padding-right:10px;
+}
+
+.benefit img{
+    width:40px;
+    height:40px;
+}
+.benefit h3{
+    font-size:14px;
+    color:var(--light-color);
+    line-height:1.3;
+    font-weight:500;
+}
+
+
+.about{
+    width:100%;
+    text-align: center;
+    padding: 120px 0;
+    padding:80px 60px;
+}
+.about-container{
     max-width:1400px;
     margin:0 auto;
-    padding:80px 60px;
+    padding: 0 80px;
+}
+.about-content{
+    max-width:1200px;
+    margin:0 auto;
+}
+.about h2{
+    font-size: 48px;
+    color: var(--secondary-color);
+    text-align:center;
+    margin-bottom: 60px;
+}
+.about h2::after{
+    content: '';
+    margin: 0 auto 30px auto;
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--secondary-color);
+    margin:20px auto 0;
+}
+.about p{
+    font-size: 24px;
+    line-height: 1.8;
+    margin: 0 auto 24px auto;
+    text-align: left;
+    max-width: 1000px;
+    margin-bottom: 24px;
+}
+.about-cta{
+    margin-top: 80px;
 }
 .devby{
     font-family: var(--secondary-font);
