@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Cores */
+    --primary-color: #050c1a;
+    --secondary-color: #D79B2B;
+    --tertiary-color: #f7dfb4;
+    --accent-color: #553802;
+    --light-color: #F8FAFC;
+    --alternate-color: #2b1b00;
+
+    /* Tipografia */
+    --title-font: 'Fjalla One', sans-serif;
+    --secondary-font: 'Work Sans', sans-serif; 
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    font-family: var(--secondary-font);
+    background-color: var(--primary-color);
+    color:var(--alternate-color);
+    margin: 0;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: var(--title-font);
+    color: var(--light-color);
+    margin-bottom: 20px;
+}
+.logo-success-page{
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.success-header{
+    border-bottom: 1px solid var(--secondary-color);
+    max-width: 100vh;
+}
+.success-title{
+    font-family: var(--title-font);
+    text-align: center;
+    margin-top: 20px;
+}
+.success-message{
+    color: var(--light-color);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.links-success{
+    background-color: var(--secondary-color);
+    color: var(--alternate-color);
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 16px;
+    width: 240px;
+    justify-content: center;
+}
+.links-success:hover{
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+    transform: scale(1.1);
+}
+.links-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+.devby{
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    margin-top: 20px;
+    font-size: 14px;
+}
+.linkdevby{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.linkdevby:hover{
+    color: var(--accent-color);
+    transition: color 1.3s ease;
+    
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    
+    bottom: 20px;
+}
