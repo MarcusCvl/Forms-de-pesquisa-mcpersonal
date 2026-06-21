@@ -153,7 +153,7 @@ margin:25px auto;
 .devby{
     font-family: var(--secondary-font);
     color: var(--secondary-color);
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 14px;
 }
 .linkdevby{
@@ -169,6 +169,38 @@ footer {
     border-top: 2px solid var(--secondary-color);
     padding: 20px;
     text-align: center;
-    
+    justify-content: center;
     bottom: 20px;
+}
+h3{
+    font-weight: 300;
+}
+.item-text{
+    font-weight: 200;
+}
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+.footer-item:not(:last-child){
+    border-right: 1px solid var(--accent-color);
+    padding-right: 40px;
+}
+.footer-item{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    text-align: left;
+    color: var(--light-color);
+    transition: all 0.3s ease;
+}
+.footer-item:hover{
+    transform: scale(1.025);
+    color: var(--secondary-color);
+}
+.footer-img{
+    max-width: 40px;
+    max-height: 40px;
 }
