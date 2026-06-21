@@ -9,6 +9,7 @@
     --light-color: #F8FAFC;
     --alternate-color: #2b1b00;
     --dark-color: rgba(255,255,255,0.02);
+    
     /* Tipografia */
     --title-font: 'Fjalla One', sans-serif;
     --secondary-font: 'Work Sans', sans-serif; 
@@ -39,14 +40,20 @@
 }
 main{
     min-height: 75vh;
-
+    
     display:flex;
     justify-content:center;
     align-items:center;
 
-    padding:40px 20px;
+    padding:30px 20px;
 
     position:relative;
+
+    background:
+        
+        url("../assets/bgimg.png");
+    background-size: cover;
+    background-position: center;
 }
 main::before{
     content:"";
@@ -68,7 +75,9 @@ main::before{
 }
 
 .success-card{
-    background: var(--dark-color);
+    background-color: var(--primary-color);
+    
+    opacity: 0.95;
     max-width: 970px;
     width: 100%;
     padding:40px;
@@ -80,13 +89,13 @@ main::before{
     flex-direction: column;
     align-items: center;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-    position:relative;
+    position: relative;
     z-index:1;
 
     
 }
 .success-icon{
-    width: 180px;
+    width: 100px;
     
 }
 
@@ -140,39 +149,7 @@ margin:25px auto;
     font-size: 18px;
     width: 60% ;
 }
-.links-section{
-    border-top: 2px solid var(--secondary-color);
-    padding: 40px;
-}
-.links-success{
-    background-color: var(--secondary-color);
-    color: var(--alternate-color);
-    text-decoration: none;
-    margin-right: 10px;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid var(--secondary-color);
-    padding: 10px 20px;
-    border-radius: 16px;
-    width: 240px;
-    justify-content: center;
-    
-}
-.links-success:hover{
-    color: var(--accent-color);
-    transition: color 0.3s ease;
-    transform: scale(1.1);
-}
-.links-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    align-items: center;
-}
+
 .devby{
     font-family: var(--secondary-font);
     color: var(--secondary-color);
@@ -189,7 +166,8 @@ margin:25px auto;
     
 }
 footer {
-    margin-top: 20px;
+    border-top: 2px solid var(--secondary-color);
+    padding: 20px;
     text-align: center;
     
     bottom: 20px;
