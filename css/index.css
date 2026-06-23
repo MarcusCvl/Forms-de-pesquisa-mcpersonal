@@ -108,7 +108,8 @@ a{
 .hero-content p{
     width:100%;
 }
-.hero-content h1{
+.hero-content h1,
+.CTAfinal h3{
     font-size: 80px;
     line-height: 1;
     font-family: var(--title-font);
@@ -214,7 +215,7 @@ p{
     padding:80px 60px;
     border-top:1px solid var(--secondary-color);
     border-bottom:1px solid var(--secondary-color);
-      background:
+    background:
     linear-gradient(
         180deg,
         #050c1a 0%,
@@ -291,14 +292,96 @@ p{
     text-align: center;
     border: 1px solid var(--cards-color);
     border-radius: 8px;
+    margin-top: 5px;
     
 }
-.differential-card h3{
+.differential-card h3,
+.who-cards h3{
     color: var(--secondary-color);
     min-height: 48px;
 }
-.differential-img{
+.differential-img,
+.who-img {
+    margin-top: auto;
     width: 50px;
+}
+.who{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+.who-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 90%;
+}
+.who-cards{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+.who-cards:not(:last-child){
+    border-right: 1px solid var(--secondary-color);
+    margin-right: 5px;
+}
+.CTAfinal{
+    padding: 60px;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.95),
+            rgba(0,0,0,.80),
+            rgba(0,0,0,.50)
+            ),
+        url(../assets/option1.png);
+        
+    background-size:cover;
+    background-position:right top;
+    background-repeat: no-repeat;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+.CTAfinal-container{
+    width: 60%;
+    gap: 10px;
+}
+.ctafinal-title span{
+    display: block;
+    margin-top: 8px;
+}
+.ctafinal-button{
+    width: 100%;
+    gap: 30px;
+    display: flex;
+}
+.principal-button{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    color: var(--primary-color);
+    padding: 20px 40px;
+    font-weight: bold;
+    font-family: var(--secondary-font);
+}
+.secondary-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 12px;
+    color: var(--secondary-color);
+    padding: 20px 40px;
+    font-weight: bold;
+    font-family: var(--secondary-font);
 }
 .devby{
     font-family: var(--secondary-font);
