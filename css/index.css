@@ -234,14 +234,16 @@ p{
     margin:0 auto;
 }
 .about h2,
-.differential h2{
+.differential h2,
+.who h2{
     font-size: 48px;
     color: var(--secondary-color);
     text-align:center;
     margin-bottom: 60px;
 }
 .about h2::after,
-.differential h2::after{
+.differential h2::after,
+.who h2::after{
     content: '';
     margin: 0 auto 30px auto;
     display: block;
@@ -267,8 +269,10 @@ p{
    font-size: 24px;
    transform:scale(1.2);
 }
-.differential{
+.differential,
+.who{
     padding: 20px;
+    border-bottom:2px solid var(--cards-color);
 }
 .differential-grid{
     display: flex;
@@ -287,6 +291,7 @@ p{
     text-align: center;
     border: 1px solid var(--cards-color);
     border-radius: 8px;
+    
 }
 .differential-card h3{
     color: var(--secondary-color);
