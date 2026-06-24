@@ -114,8 +114,7 @@ a{
 .hero-content p{
     width:100%;
 }
-.hero-content h1,
-.CTAfinal h3{
+.hero-content h1{
     font-size: 80px;
     line-height: 1;
     font-family: var(--title-font);
@@ -404,14 +403,17 @@ p{
     transform: scale(1.1);
 }
 .footer-container{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    
 }
 .slogan{
     color: var(--light-color);
 }
 .footer-icons{
-    width: 25px;
+    width: 33px;
     transition: all ease 0.3s;
 }
 .footer-icons:hover{
@@ -419,23 +421,25 @@ p{
 }
 .devby{
     font-family: var(--secondary-font);
-    color: var(--secondary-color);
+    color: var(--light-color);
     margin-top: 20px;
     font-size: 14px;
+    border-top:1px solid rgba(101, 99, 99, 0.25) ;
+    padding-top: 10px;
 }
 .linkdevby{
-    color: var(--secondary-color);
+    color: var(--light-color);
     text-decoration: none;
     font-weight: 500;
 }
 .linkdevby:hover{
-    color: var(--light-color);
+    color: var(--tertiary-color);
     transition: color 0.3s ease;
     
 }
 footer {
     margin-top: 20px;
     text-align: center;
-    
-    bottom: 10px;
+    padding:50px 40px 0px 40px;
+    bottom:10px;
 }
