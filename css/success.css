@@ -152,17 +152,25 @@ margin:25px auto;
 
 .devby{
     font-family: var(--secondary-font);
-    color: var(--secondary-color);
+    color: var(--light-color);
     margin-top: 30px;
     font-size: 14px;
 }
+.dev{
+    font-family: var(--secondary-font);
+    color: var(--light-color);
+    
+    font-size: 9px;
+    padding-top: 10px;
+}
 .linkdevby{
-    color: var(--secondary-color);
+    color: var(--light-color);
     text-decoration: none;
+    font-weight: 300;
 }
 .linkdevby:hover{
-    color: var(--accent-color);
-    transition: color 1.3s ease;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
     
 }
 footer {
