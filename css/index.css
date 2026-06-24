@@ -114,7 +114,8 @@ a{
 .hero-content p{
     width:100%;
 }
-.hero-content h1{
+.hero-content h1,
+.CTAfinal h3{
     font-size: 80px;
     line-height: 1;
     font-family: var(--title-font);
