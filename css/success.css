@@ -27,10 +27,10 @@
 }
 
 .logo-success-page {
-  width: 300px;
+  width: 18.75rem;
   height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 .success-header {
   display: flex;
@@ -44,7 +44,7 @@ main {
   justify-content: center;
   align-items: center;
 
-  padding: 30px 20px;
+  padding: 1.875rem 1.25rem;
 
   position: relative;
 
@@ -74,31 +74,31 @@ main::before {
   background-color: var(--primary-color);
 
   opacity: 0.95;
-  max-width: 970px;
+  max-width: 60.625rem;
   width: 100%;
-  padding: 40px;
-  margin: 10px auto;
+  padding: 2.5rem;
+  margin: 0.625rem auto;
   border: 1px solid var(--secondary-color);
   border-radius: 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1.25rem 3.75rem rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 1;
 }
 .success-icon {
-  width: 100px;
+  width: 6.25rem;
 }
 
 .whatsapp-success {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 15px 35px;
+  gap: 0.75rem;
+  padding: 1rem 2.1875rem;
   width: 40%;
   background: var(--primary-color);
   color: var(--secondary-color);
@@ -107,7 +107,7 @@ main::before {
   border: 1px solid var(--secondary-color);
   border-radius: 8px;
   transition: 0.3s;
-  box-shadow: 0 5px 15px rgba(87, 62, 9, 0.15);
+  box-shadow: 0 0.3125rem 1rem rgba(87, 62, 9, 0.15);
 }
 .whatsapp-success:hover {
   background: var(--dark-color);
@@ -117,41 +117,41 @@ main::before {
   color: var(--light-color);
   font-family: var(--title-font);
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 .success-title span {
   display: block;
   color: var(--secondary-color);
 }
 .divider {
-  width: 140px;
+  width: 8.75rem;
 
-  height: 2px;
+  height: 0.125rem;
 
   background: var(--secondary-color);
 
-  margin: 25px auto;
+  margin: 1.5625rem auto;
 }
 .success-message {
   color: var(--light-color);
   text-align: center;
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 0.625rem;
+  font-size: 1.125rem;
   width: 60%;
 }
 
 .devby {
   font-family: var(--secondary-font);
   color: var(--light-color);
-  margin-top: 30px;
-  font-size: 14px;
+  margin-top: 1.875rem;
+  font-size: 0.875rem;
 }
 .dev {
   font-family: var(--secondary-font);
   color: var(--light-color);
 
-  font-size: 9px;
-  padding-top: 10px;
+  font-size: 0.5625rem;
+  padding-top: 0.625rem;
 }
 .linkdevby {
   color: var(--light-color);
@@ -164,10 +164,10 @@ main::before {
 }
 footer {
   border-top: 2px solid var(--secondary-color);
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
   justify-content: center;
-  bottom: 20px;
+  bottom: 1.25rem;
 }
 h3 {
   font-weight: 300;
@@ -179,15 +179,15 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 .footer-item:not(:last-child) {
   border-right: 1px solid var(--accent-color);
-  padding-right: 40px;
+  padding-right: 2.5rem;
 }
 .footer-item {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   text-decoration: none;
   text-align: left;
   color: var(--light-color);
@@ -198,6 +198,6 @@ h3 {
   color: var(--secondary-color);
 }
 .footer-img {
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
 }
