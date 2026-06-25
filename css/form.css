@@ -1,156 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
-    /* Cores */
-    --primary-color: #050c1a;
-    --secondary-color: #D79B2B;
-    --tertiary-color: #f7dfb4;
-    --accent-color: #553802;
-    --light-color: #F8FAFC;
-    --alternate-color: #2b1b00;
+:root {
+  /* Cores */
+  --primary-color: #050c1a;
+  --secondary-color: #d79b2b;
+  --tertiary-color: #f7dfb4;
+  --accent-color: #553802;
+  --light-color: #f8fafc;
+  --alternate-color: #2b1b00;
 
-    /* Tipografia */
-    --title-font: 'Fjalla One', sans-serif;
-    --secondary-font: 'Work Sans', sans-serif; 
+  /* Tipografia */
+  --title-font: "Fjalla One", sans-serif;
+  --secondary-font: "Work Sans", sans-serif;
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: var(--secondary-font);
-    background-color: var(--primary-color);
-    color:var(--alternate-color);
-    margin: 0;
-    padding: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+  font-family: var(--secondary-font);
+  background-color: var(--primary-color);
+  color: var(--alternate-color);
+  margin: 0;
+  padding: 1.25rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 37.5rem;
+  margin: 0 auto;
 }
 header {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 1.25rem;
 }
 
-.logo{
-    width: 300px;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.logo {
+  width: 18.75rem;
+  height: auto;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 h1 {
-    font-family: var(--title-font);
-    color: var(--light-color);
-    margin-bottom: 20px;
+  font-family: var(--title-font);
+  color: var(--light-color);
+  margin-bottom: 1.25rem;
 }
-p{
-    font-weight: bold;
+p {
+  font-weight: bold;
 }
 
 form {
-    background-color: var(--secondary-color);
-    padding: 15px;
-    border-radius: 12px;
-    
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 0.75rem;
 }
-fieldset{
-    padding: 15px;
-    border: 1px solid rgba(215,155,43,.2);
-    border-radius: 18px;
-    backdrop-filter: blur(10px);
-    margin-bottom: 20px;
+fieldset {
+  padding: 1rem;
+  border: 1px solid rgba(215, 155, 43, 0.2);
+  border-radius: 1.125rem;
+  backdrop-filter: blur(10px);
+  margin-bottom: 1.25rem;
 }
 legend {
-    font-weight: bold;
-    font-size: 18px;
-    font-family: var(--title-font);
-    padding: 0 5px;   
+  font-weight: bold;
+  font-size: 1.125rem;
+  font-family: var(--title-font);
+  padding: 0 0.3125rem;
 }
-label{
-    display: inline-block;
-    margin-bottom: 5px;
-    font-weight: bold;
+label {
+  display: inline-block;
+  margin-bottom: 0.3125rem;
+  font-weight: bold;
 }
-input[type="tel"], 
-input[type="file"]{
-    margin-bottom: 0px;
+input[type="tel"],
+input[type="file"] {
+  margin-bottom: 0px;
 }
-small{
-    display: inline-block;
-    margin-bottom: 10px;
-    
-}
-
-.checkbox-label{
-    display:flex;
-    align-items:flex-start;
-    gap: 5px;
-    line-height: 1.5;
+small {
+  display: inline-block;
+  margin-bottom: 0.625rem;
 }
 
-input, select, textarea{
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid var(--tertiary-color);
-    border-radius: 3px;
-    background-color: var(--tertiary-color);
-    cursor: pointer;
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3125rem;
+  line-height: 1.5;
 }
-textarea{
-    min-height: 100px;
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.125rem;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 3px;
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+}
+textarea {
+  min-height: 6.25rem;
 }
 input[type="checkbox"],
-input[type="radio"]{
-    width: auto;  
+input[type="radio"] {
+  width: auto;
 }
-input:invalid,select:invalid, textarea:invalid{
-    border-color: red;
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
 }
 button {
-    width: 100px;
-    background-color: var(--accent-color);
-    color: var(--light-color);
-    border: 1px solid var(--alternate-color);
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-    padding: 5px;
+  width: 6.25rem;
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  border: 1px solid var(--alternate-color);
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  margin-right: 0.625rem;
+  padding: 0.3125rem;
 }
 button[type="submit"]:hover {
-    background-color:green;
-    transition: background-color 0.3s ease;
+  background-color: green;
+  transition: background-color 0.3s ease;
 }
 button[type="reset"]:hover {
-    background-color: red;
-    transition: background-color 0.3s ease;
+  background-color: red;
+  transition: background-color 0.3s ease;
 }
-.devby{
-    font-family: var(--secondary-font);
-    color: var(--secondary-color);
-    margin-top: 20px;
-    font-size: 14px;
+.devby {
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
 }
-.linkdevby{
-    color: var(--secondary-color);
-    text-decoration: none;
+.linkdevby {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
-.linkdevby:hover{
-    color: var(--accent-color);
-    transition: color 1.3s ease;
-    
+.linkdevby:hover {
+  color: var(--accent-color);
+  transition: color 1.3s ease;
 }
 footer {
-    margin-top: 20px;
-    text-align: center;
-    
-    bottom: 20px;
+  margin-top: 1.25rem;
+  text-align: center;
+
+  bottom: 1.25rem;
 }
-
-
