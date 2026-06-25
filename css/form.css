@@ -66,13 +66,13 @@ fieldset {
 }
 legend {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: var(--title-font);
-  padding: 0 5px;
+  padding: 0 0.3125rem;
 }
 label {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   font-weight: bold;
 }
 input[type="tel"],
@@ -81,13 +81,13 @@ input[type="file"] {
 }
 small {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .checkbox-label {
   display: flex;
   align-items: flex-start;
-  gap: 5px;
+  gap: 0.3125rem;
   line-height: 1.5;
 }
 
@@ -95,15 +95,15 @@ input,
 select,
 textarea {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
+  padding: 0.5rem;
+  margin-bottom: 1.125rem;
   border: 1px solid var(--tertiary-color);
   border-radius: 3px;
   background-color: var(--tertiary-color);
   cursor: pointer;
 }
 textarea {
-  min-height: 100px;
+  min-height: 6.25rem;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -115,14 +115,14 @@ textarea:invalid {
   border-color: red;
 }
 button {
-  width: 100px;
+  width: 6.25rem;
   background-color: var(--accent-color);
   color: var(--light-color);
   border: 1px solid var(--alternate-color);
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   cursor: pointer;
-  margin-right: 10px;
-  padding: 5px;
+  margin-right: 0.625rem;
+  padding: 0.3125rem;
 }
 button[type="submit"]:hover {
   background-color: green;
@@ -135,8 +135,8 @@ button[type="reset"]:hover {
 .devby {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
-  margin-top: 20px;
-  font-size: 14px;
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
 }
 .linkdevby {
   color: var(--secondary-color);
@@ -147,8 +147,8 @@ button[type="reset"]:hover {
   transition: color 1.3s ease;
 }
 footer {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   text-align: center;
 
-  bottom: 20px;
+  bottom: 1.25rem;
 }
