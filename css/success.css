@@ -1,214 +1,203 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
-    /* Cores */
-    --primary-color: #050c1a;
-    --secondary-color: #D79B2B;
-    --tertiary-color: #f7dfb4;
-    --accent-color: #553802;
-    --light-color: #F8FAFC;
-    --alternate-color: #2b1b00;
-    --dark-color: rgba(255,255,255,0.02);
-    
-    /* Tipografia */
-    --title-font: 'Fjalla One', sans-serif;
-    --secondary-font: 'Work Sans', sans-serif; 
+:root {
+  /* Cores */
+  --primary-color: #050c1a;
+  --secondary-color: #d79b2b;
+  --tertiary-color: #f7dfb4;
+  --accent-color: #553802;
+  --light-color: #f8fafc;
+  --alternate-color: #2b1b00;
+  --dark-color: rgba(255, 255, 255, 0.02);
+
+  /* Tipografia */
+  --title-font: "Fjalla One", sans-serif;
+  --secondary-font: "Work Sans", sans-serif;
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.success-page{
-    background-color: var(--primary-color);
-    min-height: 100vh;
-    color: var(--light-color);
-    font-family: var(--secondary-font);
-}
-
-.logo-success-page{
-    width: 300px;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.success-header{
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid var(--secondary-color);
-}
-main{
-    min-height: 75vh;
-    
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    padding:30px 20px;
-
-    position:relative;
-
-    background:
-        
-        url("../assets/bgimg.png");
-    background-size: cover;
-    background-position: center;
-}
-main::before{
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-    linear-gradient(
-        90deg,
-        rgba(215,155,43,0.05),
-        transparent 25%,
-        transparent 75%,
-        rgba(215,155,43,0.05)
-    );
-
-    pointer-events:none;
+.success-page {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  color: var(--light-color);
+  font-family: var(--secondary-font);
 }
 
-.success-card{
-    background-color: var(--primary-color);
-    
-    opacity: 0.95;
-    max-width: 970px;
-    width: 100%;
-    padding:40px;
-    margin: 10px auto;
-    border: 1px solid var(--secondary-color);
-    border-radius: 16px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index:1;
-
-    
+.logo-success-page {
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.success-icon{
-    width: 100px;
-    
+.success-header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid var(--secondary-color);
 }
+main {
+  min-height: 75vh;
 
-.whatsapp-success{
-    
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 15px 35px;
-    width: 40%;
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 700;
-    border: 1px solid var(--secondary-color);
-    border-radius: 8px;
-    transition:  .3s ;
-    box-shadow: 0 5px 15px rgba(87, 62, 9, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 20px;
+
+  position: relative;
+
+  background: url("../assets/bgimg.png");
+  background-size: cover;
+  background-position: center;
 }
-.whatsapp-success:hover{
-    background:var(--dark-color);
-    color:var(--light-color);
-}
-.success-title{
-    color: var(--light-color);
-    font-family: var(--title-font);
-    text-align: center;
-    margin-top: 20px;
-}
-.success-title span{
-    display: block;
-    color: var(--secondary-color);
-}
-.divider{
+main::before {
+  content: "";
 
-width:140px;
+  position: absolute;
 
-height:2px;
+  inset: 0;
 
-background:var(--secondary-color);
+  background: linear-gradient(
+    90deg,
+    rgba(215, 155, 43, 0.05),
+    transparent 25%,
+    transparent 75%,
+    rgba(215, 155, 43, 0.05)
+  );
 
-margin:25px auto;
-
-}
-.success-message{
-    color: var(--light-color);
-    text-align: center;
-    margin-top: 10px;
-    font-size: 18px;
-    width: 60% ;
+  pointer-events: none;
 }
 
-.devby{
-    font-family: var(--secondary-font);
-    color: var(--light-color);
-    margin-top: 30px;
-    font-size: 14px;
+.success-card {
+  background-color: var(--primary-color);
+
+  opacity: 0.95;
+  max-width: 970px;
+  width: 100%;
+  padding: 40px;
+  margin: 10px auto;
+  border: 1px solid var(--secondary-color);
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
 }
-.dev{
-    font-family: var(--secondary-font);
-    color: var(--light-color);
-    
-    font-size: 9px;
-    padding-top: 10px;
+.success-icon {
+  width: 100px;
 }
-.linkdevby{
-    color: var(--light-color);
-    text-decoration: none;
-    font-weight: 300;
+
+.whatsapp-success {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px 35px;
+  width: 40%;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(87, 62, 9, 0.15);
 }
-.linkdevby:hover{
-    color: var(--secondary-color);
-    transition: color 0.3s ease;
-    
+.whatsapp-success:hover {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+.success-title {
+  color: var(--light-color);
+  font-family: var(--title-font);
+  text-align: center;
+  margin-top: 20px;
+}
+.success-title span {
+  display: block;
+  color: var(--secondary-color);
+}
+.divider {
+  width: 140px;
+
+  height: 2px;
+
+  background: var(--secondary-color);
+
+  margin: 25px auto;
+}
+.success-message {
+  color: var(--light-color);
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  width: 60%;
+}
+
+.devby {
+  font-family: var(--secondary-font);
+  color: var(--light-color);
+  margin-top: 30px;
+  font-size: 14px;
+}
+.dev {
+  font-family: var(--secondary-font);
+  color: var(--light-color);
+
+  font-size: 9px;
+  padding-top: 10px;
+}
+.linkdevby {
+  color: var(--light-color);
+  text-decoration: none;
+  font-weight: 300;
+}
+.linkdevby:hover {
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
 }
 footer {
-    border-top: 2px solid var(--secondary-color);
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-    bottom: 20px;
+  border-top: 2px solid var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  bottom: 20px;
 }
-h3{
-    font-weight: 300;
+h3 {
+  font-weight: 300;
 }
-.item-text{
-    font-weight: 200;
+.item-text {
+  font-weight: 200;
 }
-.footer-links{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
 }
-.footer-item:not(:last-child){
-    border-right: 1px solid var(--accent-color);
-    padding-right: 40px;
+.footer-item:not(:last-child) {
+  border-right: 1px solid var(--accent-color);
+  padding-right: 40px;
 }
-.footer-item{
-    display: flex;
-    gap: 20px;
-    text-decoration: none;
-    text-align: left;
-    color: var(--light-color);
-    transition: all 0.3s ease;
+.footer-item {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  text-align: left;
+  color: var(--light-color);
+  transition: all 0.3s ease;
 }
-.footer-item:hover{
-    transform: scale(1.025);
-    color: var(--secondary-color);
+.footer-item:hover {
+  transform: scale(1.025);
+  color: var(--secondary-color);
 }
-.footer-img{
-    max-width: 40px;
-    max-height: 40px;
+.footer-img {
+  max-width: 40px;
+  max-height: 40px;
 }
